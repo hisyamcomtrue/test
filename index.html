@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
-    </head>
+
+   <script>
+        function myFunc() {
+            // does nothing
+        }
+
+        function anotherFunc() {
+            // also does nothing
+        }
+
+        function thirdFunc() {
+            window.location.href = "next2.html";
+        }
+    </script>
+
+</head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
@@ -18,21 +33,19 @@
     <main>
         <section>
             <h2>Main Section Title</h2>
-                <a href="next1.html">next1</a>
+            <a href="next1.html">next1</a>
+        </section>
 
-                <a href="next2.html">
-                <img 
-                    src="Piued1k5_400x400.jpg" 
-                    alt="Description of the image for accessibility"
-                    width="400" 
-                    height="400">
-                </a>
-            </section>
+        <!-- Example buttons calling the JS functions -->
+        <button onclick="myFunc()">Run myFunc</button>
+        <button onclick="anotherFunc()">Run anotherFunc</button>
+        <button onclick="thirdFunc()">Run thirdFunc</button>
+
     </main>
 
     <footer>
         <p>&copy; 2025 Your Name or Company. All rights reserved.</p>
     </footer>
 
-    </body>
+</body>
 </html>
