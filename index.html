@@ -17,6 +17,20 @@
         function f3() {
             window.location.href = "next2.html";
         }
+        const Board = {
+            downloadFile(id) {
+                // Build the static file URL
+                const filename = `(포스터)천리안위성 2B호 마스코트 공모.jpg`; // adjust extension & path to match your setup
+                const a = document.createElement("a");
+                a.href = filename;        // <-- the file is served directly by GitHub Pages
+                a.download = filename;    // optional but recommended
+            
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }
+        };
+
     </script>
 
 </head>
