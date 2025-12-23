@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Delayed body</title>
+
+  <script>
+    // Remove the body as early as possible
+    document.addEventListener("DOMContentLoaded", () => {
+      const body = document.body;
+      body.remove();
+
+      // Re-insert the body after 5 seconds
+      setTimeout(() => {
+        const newBody = document.createElement("body");
+        newBody.innerHTML = "<h1>Body appears after delay</h1>";
+        document.documentElement.appendChild(newBody);
+      }, 5000);
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Initial body</h1>
+</body>
+</html>
