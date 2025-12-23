@@ -18,6 +18,9 @@
         function f3() {
             window.location.href = "next2.html";
         }
+        function f4() {
+            window.location.href = "next3.html";
+        }
         const Board = {
             downloadFile(id) {
                 // Build the static file URL
@@ -45,14 +48,15 @@
         <!-- <a href="next1.html">link 1</a>
         <!-- <a href="next2.html">link 2</a> -->
         <button onclick="f1()">Run myFunc</button>
-        <button onclick="f2()">Run anotherFunc</button>
-        <button onclick="f3()">Run thirdFunc</button>
+        <!-- <button onclick="f2()">Run anotherFunc</button>
+        <button onclick="f3()">Run thirdFunc</button> -->
+        <button onclick="f4()">Run fourthFunc</button>
 
-        <a href="javascript:void(0);"
+        <!-- <a href="javascript:void(0);"
            onclick="Board.downloadFile('poster.jpg')">
           Download poster
         </a>
-        <a href="test.txt">plain text</a>
+        <a href="test.txt">plain text</a> -->
     </main>
 </body>
 </html>
