@@ -10,11 +10,9 @@
             // does nothing
             console.log("hello")
         }
-
         function f2() {
             window.location.href = "next1.html";
         }
-
         function f3() {
             window.location.href = "next2.html";
         }
@@ -23,11 +21,10 @@
         }
         const Board = {
             downloadFile(id) {
-                // Build the static file URL
-                const filename = `(포스터)천리안위성 2B호 마스코트 공모.jpg`; // adjust extension & path to match your setup
+                const filename = `(포스터)천리안위성 2B호 마스코트 공모.jpg`;
                 const a = document.createElement("a");
-                a.href = filename;        // <-- the file is served directly by GitHub Pages
-                a.download = filename;    // optional but recommended
+                a.href = filename;
+                a.download = filename;
             
                 document.body.appendChild(a);
                 a.click();
@@ -48,15 +45,15 @@
         <!-- <a href="next1.html">link 1</a>
         <!-- <a href="next2.html">link 2</a> -->
         <button onclick="f1()">Run myFunc</button>
-        <!-- <button onclick="f2()">Run anotherFunc</button>
-        <button onclick="f3()">Run thirdFunc</button> -->
+        <button onclick="f2()">Run anotherFunc</button>
+        <button onclick="f3()">Run thirdFunc</button>
         <button onclick="f4()">Run fourthFunc</button>
 
-        <!-- <a href="javascript:void(0);"
+        <a href="javascript:void(0);"
            onclick="Board.downloadFile('poster.jpg')">
           Download poster
         </a>
-        <a href="test.txt">plain text</a> -->
+        <a href="test.txt">plain text</a>
     </main>
 </body>
 </html>
